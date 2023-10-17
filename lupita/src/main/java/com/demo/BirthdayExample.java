@@ -65,7 +65,7 @@ public class BirthdayExample {
      * extra credit module on Files, Directories, and Folders in Canvas.
      */
     String pathToFile =
-      "C:/Users/jerom/Documents/GitHub/class-java/birthday-lupita-lookup-app/lupita/src/main/java/com/example/birthdayOnlyForTesting.json";
+      "C:/Users/Jose'spath/Documents/GitHub/demo-lupita/lupita/src/main/java/birthday.json/birthday.json";
 
     // students should change the code below in order to implment their own solution
 
@@ -82,6 +82,15 @@ public class BirthdayExample {
 
     // print user input
     System.out.println("name = " + name);
+
+    // check to see if the name is in the hashmap
+    if (birthdayMap.containsKey(name)) {
+      String birthday = birthdayMap.get(name);
+      // if the name is in the hashmap, print the birthday
+      System.out.println("The birthday of " + name + " is " + birthday);
+    } else {
+      System.out.println("The name " + name + " is not found in the list.");
+    }
 
     // close the scanner
     input.close();
